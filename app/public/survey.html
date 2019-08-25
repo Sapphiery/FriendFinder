@@ -7,8 +7,142 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1186b9255f.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <h3><strong>About You</strong></h3>
+
+        <h4>Name (required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to Photo Image (required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+
+        <hr>
+
+        <h3><strong>Question 1</strong></h3>
+        <h4>You love cats</h4>
+        <select class="form-control" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>You love doggos</h4>
+        <select class="form-control" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>You enjoy catgirls</h4>
+        <select class="form-control" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>You can't help eating cookies</h4>
+        <select class="form-control" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>You enjoy sleeping</h4>
+        <select class="form-control" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>You cook lasagna</h4>
+        <select class="form-control" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>You like swimming</h4>
+        <select class="form-control" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>You love petting cats</h4>
+        <select class="form-control" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 9</strong></h3>
+        <h4>You love petting doggos</h4>
+        <select class="form-control" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 10</strong></h3>
+        <h4>You live on the internet</h4>
+        <select class="form-control" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-lg btn-primary" id="submit"><i class="fas fa-check-circle"></i> Submit</button>
+        <br>
+        <hr>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a></p>
+        </div>
+    </footer>
 </body>
 </html>
