@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Find friends based on similarity",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sapphiery/FriendFinder.git"
+  },
+  "author": "Kira Mueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sapphiery/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/Sapphiery/FriendFinder#readme"
+}
