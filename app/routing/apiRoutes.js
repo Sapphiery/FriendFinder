@@ -1,4 +1,7 @@
-function apiRoutes(app,friends) {
+function apiRoutes(app,friends,express) {
+    app.use(express.urlencoded({ extended: true }));
+    app.use(express.json());
+
     app.get('/api/friends', (req,res) => {
         res.json(friends);
     });
@@ -7,10 +10,10 @@ function apiRoutes(app,friends) {
         let differences = [];
         let me = req.body.scores;
 
-        for (let i of friends) {
+        for (let i = 0; i < friends.length; i++) {
             let diff = 0;
-            let scores = friends[i].scores
-            for (let j of scores) {
+            let scores = friends[i].scores;
+            for (let j = 0; j < scores.length; j++) {
                 diff += Math.abs(me[j] - scores[j]);
             }
             differences.push(diff);
@@ -23,6 +26,8 @@ function apiRoutes(app,friends) {
                 index = i;
             }
         }
+
+        friends.push(req.body);
 
         res.json(friends[index]);
     });

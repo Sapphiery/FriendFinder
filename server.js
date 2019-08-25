@@ -6,7 +6,10 @@ var PORT = process.env.PORT || 8080;
 
 var app = express();
 
-require(path.join(__dirname, '/app/routing/apiRoutes.js'))(app,friends);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+require(path.join(__dirname, '/app/routing/apiRoutes.js'))(app,friends,express);
 require(path.join(__dirname, '/app/routing/htmlRoutes.js'))(app,path);
 
 app.listen(PORT, (err) => {
